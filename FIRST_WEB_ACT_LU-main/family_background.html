@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Family Background</title>
+    <style>
+        .frame-container {
+            border: 5px solid rgb(146, 7, 7) !important; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .section-divider {
+            border: 0;
+            border-top: 2px solid #000;
+            margin: 20px 0;
+        }
+
+        h3 {
+            color: rgb(146, 7, 7);
+        }
+
+        h2 {
+            color: rgb(146, 7, 7);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: rgb(105, 0, 0) !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="family_background.html">FAMILY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_me.html">About me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="family_background.html">Family Background</a></li>
+                            <li><a class="dropdown-item" href="educational.html">Educational Attainment</a></li>
+                            <li><a class="dropdown-item" href="favorites.html">Favorites</a></li>
+                            <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="frame-container">
+        <section id="family-background" class="container mt-5">
+            <h2 class="text-center">My Family Background</h2>
+            <p class="lead text-center">Here is a little about my family.</p>
+
+            <hr class="section-divider">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="family/dade.jpg" class="card-img-top" alt="Father Image" data-bs-toggle="modal" data-bs-target="#fatherModal">
+                        <div class="card-body">
+                            <h3 class="card-title">Father</h3>
+                            <p class="card-text">My father's name is <span style="color: rgb(146, 7, 7);">Gilbert A. Olan.</span> He is a Constructor who loves to work, play games, and play basketball. He has always been a great source of support and guidance for me throughout my life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="family/mame.jpg" class="card-img-top" alt="Mother Image" data-bs-toggle="modal" data-bs-target="#motherModal">
+                        <div class="card-body">
+                            <h3 class="card-title">Mother</h3>
+                            <p class="card-text">My mother's name is <span style="color: rgb(146, 7, 7);">Lovelyn B. Olan.</span> She is a Hotel Receptionist and has a passion for taking pictures, and listening to worship songs. She has taught me the values of kindness, hard work, and perseverance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="family/nene.jpg" class="card-img-top" alt="Sister Image" data-bs-toggle="modal" data-bs-target="#siblingModal">
+                        <div class="card-body">
+                            <h3 class="card-title">Sibling</h3>
+                            <p class="card-text">I have only 1 sibling. My Sister <span style="color: rgb(146, 7, 7);">Jusmine Olan</span> is a kid who loves the color pink and loves to play and use social media. We have grown up together and share many memorable moments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="family/amaatinay.jpg" class="card-img-top" alt="Grandparents Image" data-bs-toggle="modal" data-bs-target="#grandparentsModal">
+                          <div class="card-body">  
+                            <h3 class="card-title">Grand Parents</h3>
+                            <p class="card-text">Since both of my parents are on abroad, my grandparents raised the both of us. My grandmother's name is <span style="color: rgb(146, 7, 7);">Loreta Olan</span> and she is a very wonderful woman, and my grandfather's name is <span style="color: rgb(146, 7, 7);">Zaldy Olan</span> and he is a very hardworking man.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="fatherModal" tabindex="-1" aria-labelledby="fatherModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="fatherModalLabel">Father</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="family/dade.jpg" class="img-fluid" alt="Father Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="motherModal" tabindex="-1" aria-labelledby="motherModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="motherModalLabel">Mother</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="family/mame.jpg" class="img-fluid" alt="Mother Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="siblingModal" tabindex="-1" aria-labelledby="siblingModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="siblingModalLabel">Siblings</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="family/nene.jpg" class="img-fluid" alt="Sister Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="grandparentsModal" tabindex="-1" aria-labelledby="grandparentsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="grandparentsModalLabel">Grand Parents</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="family/amaatinay.jpg" class="img-fluid" alt="Grandparents Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

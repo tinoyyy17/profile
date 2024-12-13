@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .content {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .section-frame {
+            border: 2px solid #6c757d;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            border-top: 2px solid #6c757d;
+        }
+    </style>
+    <title>About Me</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: rgb(105, 0, 0) !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="about_me.html">ABOUT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_me.html">About Me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="family_background.html">Family Background</a></li>
+                  <li><a class="dropdown-item" href="educational.html">Educational Attainment</a></li>
+                  <li><a class="dropdown-item" href="favorites.html">Favorites</a></li>
+                  <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-3 content w-50">
+        <div class="section-frame text-center">
+            <h1 class="mb-3">Hi, I'm Justine Olan</h1>
+            <p class="lead">A passionate IT student and an aspiring game developer.</p>
+        </div>
+    </div>
+
+    <section id="about" class="py-5 content">
+        <div class="container content w-50">
+            <div class="section-frame">
+                <h2 class="text-center mb-2">About Me</h2>
+                <p>
+                    Hello! I’m Justine Olan, an IT student deeply interested in software development, game creation, and personal growth. Currently, I’m studying at Laguna to hone my skill and deepen my understanding about programming.
+                </p>
+                <p>
+                    My journey is all about continuous learning and embracing challenges that push me to grow personally and professionally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 content">
+        <div class="container content w-50">
+            <div class="section-frame">
+                <h2 class="text-center mb-2">Hobbies</h2>
+                <p>
+                    My hobbies aside from developing a game or making a website is to watch anime, eat food, play some games, and read manga.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="socials" class="py-5 content">
+        <div class="container content w-50">
+            <div class="section-frame">
+                <h2 class="text-center mb-3">My Contacts</h2>
+                <div class="accordion" id="accordionSocials">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFacebook">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFacebook" aria-expanded="true" aria-controls="collapseFacebook">
+                                Facebook
+                            </button>
+                        </h2>
+                        <div id="collapseFacebook" class="accordion-collapse collapse show" aria-labelledby="headingFacebook" data-bs-parent="#accordionSocials">
+                            <div class="accordion-body">
+                                <a href="https://www.facebook.com/profile.php?id=61550564378250" target="_blank">Justine Olan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingInstagram">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstagram" aria-expanded="false" aria-controls="collapseInstagram">
+                                Instagram
+                            </button>
+                        </h2>
+                        <div id="collapseInstagram" class="accordion-collapse collapse" aria-labelledby="headingInstagram" data-bs-parent="#accordionSocials">
+                            <div class="accordion-body">
+                                <a href="https://www.instagram.com/ssupjustine/" target="_blank">ssupjustine</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingCNumber">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCNumber" aria-expanded="false" aria-controls="collapseCNumber">
+                                Contact Number
+                            </button>
+                        </h2>
+                        <div id="collapseCNumber" class="accordion-collapse collapse" aria-labelledby="headingCNumber" data-bs-parent="#accordionSocials">
+                            <div class="accordion-body">
+                                <p>09307086027</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5 content w-50">
+        <div class="section-frame">
+            <h2 class="text-center mb-4">Email me!</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="4528ea42-f6dd-4c4c-8740-d9a981f21d5f">
+
+                <!-- Name Field -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+    
+                <!-- Email Field -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+    
+                <!-- Message Field -->
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary" style="background-color: rgb(146, 7, 7) !important;">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="container">
+            <p>&copy; 2024 Justine Olan. <i>All rights reserved.</i></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

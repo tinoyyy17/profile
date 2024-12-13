@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: rgb(105, 0, 0) !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_me.html">About me</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="family_background.html">Family Background</a></li>
+                  <li><a class="dropdown-item" href="educational.html">Educational Attainment</a></li>
+                  <li><a class="dropdown-item" href="favorites.html">Favorites</a></li>
+                  <li><a class="dropdown-item" href="photo_gallery.html">Photo Gallery</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 justify-content d-flex center">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="name-frame">
+                    <br>
+                    <p>Full Name: <span id="typing-name"></span></p>
+                    <p>Program and Block: <span id="typing-program"></span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="profile-frame">
+                    <img src="profile.png" alt="Profile Picture" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#profileModal">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+
+    <div class="text-center mt-5 mb-3">
+        <p style="color: rgb(105, 0, 0); font-weight: bold;">Interested? Learn more about me:</p>
+        <a href="about_me.html" class="btn" style="background-color: rgb(105, 0, 0); color: white;">About Me</a>
+    </div>
+
+
+    <!-- Modal for Profile Picture -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">Profile Picture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="profile.png" alt="Profile Picture" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(146, 7, 7) !important;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+        const nameText = "Justine B. Olan";
+        const programText = "BSIT SD 1C";
+
+        const typingName = document.getElementById("typing-name");
+        const typingProgram = document.getElementById("typing-program");
+
+        let nameIndex = 0;
+        let programIndex = 0;
+
+        function typeEffectName() {
+            if (nameIndex < nameText.length) {
+                typingName.innerHTML += nameText[nameIndex];
+                nameIndex++;
+                setTimeout(typeEffectName, 100);
+            } else {
+                typeEffectProgram();
+            }
+        }
+
+        function typeEffectProgram() {
+            if (programIndex < programText.length) {
+                typingProgram.innerHTML += programText[programIndex];
+                programIndex++;
+                setTimeout(typeEffectProgram, 100);
+            }
+        }
+
+        window.onload = () => typeEffectName();
+    </script>
+</body>
+</html>
